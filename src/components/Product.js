@@ -1,5 +1,6 @@
 import React from 'react';
 import AddIcon from '@material-ui/icons/Add';
+import StarRateIcon from '@material-ui/icons/StarRate';
 import './../Product.css';
 
 function Product({ title, image, price, rating }) {
@@ -16,7 +17,7 @@ function Product({ title, image, price, rating }) {
             .fill()
             .map((_, i) => (
               <span role="img" aria-label="star">
-                ⭐
+                <StarRateIcon />
               </span>
             ))}
         </div>
