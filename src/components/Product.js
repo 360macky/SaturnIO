@@ -1,4 +1,5 @@
 import React from 'react';
+import AddIcon from '@material-ui/icons/Add';
 import './../Product.css';
 
 function Product({ title, image, price, rating }) {
@@ -26,7 +27,10 @@ function Product({ title, image, price, rating }) {
         title={'Preview of ' + title}
         className="product__image"
       />
-      <button className="product__add-to-basket">Add to Basket</button>
+      <button className="product__add-to-basket">
+        <AddIcon />&nbsp;
+        Add to Basket
+      </button>
     </div>
   );
 }
