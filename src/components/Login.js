@@ -6,21 +6,29 @@ import { database, auth } from '../firebase';
 import { useHistory } from 'react-router-dom';
 
 function Login() {
-  
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const history = useHistory();
 
   const SignUp = (e) => {
     e.preventDefault();
-    auth.createUserWithEmailAndPassword(email, password).then(auth => {
-      if (auth) {
-        history.push('/')
-      }
-    }).catch(err => alert(err.message));
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+        if (auth) {
+          history.push('/');
+        }
+      })
+      .catch((err) => alert(err.message));
   };
   const SingIn = (e) => {
     e.preventDefault();
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((auth) => {
+        history.push('/');
+      })
+      .catch((error) => alert(error.message));
   };
 
   return (
