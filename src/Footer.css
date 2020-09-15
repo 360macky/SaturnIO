@@ -1,0 +1,17 @@
+footer {
+  background-color: var(--color-skyblue-dark);
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  color: white;
+}
+
+.footer__first-block,
+.footer__second-block {
+  display: flex;
+  justify-content: space-evenly;
+}
