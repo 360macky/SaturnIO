@@ -33,7 +33,7 @@ function Login() {
 
   return (
     <div className="login">
-      <h1>Empieza a explorar el universo</h1>
+      <h1>Start exploring the universe</h1>
       <div className="login-card">
         <div className="form-input">
           <label htmlFor="email">Email: </label>
