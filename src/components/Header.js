@@ -5,9 +5,16 @@ import Logotipo from '../logotipo.png';
 import '../Header.css';
 import { Link } from 'react-router-dom';
 import { useStateValue } from '../StateProvider';
+import { auth } from '../firebase';
 
 function Header() {
-  const [{ basket }] = useStateValue();
+  const [{ basket, user }] = useStateValue();
+
+  const handleAuthentication = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
 
   return (
     <header className="header">
@@ -31,10 +38,14 @@ function Header() {
         <SearchIcon className="header__search-icon" />
       </div>
       <div className="header__nav">
-        <Link to="/login">
-          <div className="header__option">
-            <span className="header__small-label">Hello user</span>
-            <span className="header__large-label">Sign in</span>
+        <Link to={user ? '/' : '/login'}>
+          <div className="header__option" onClick={handleAuthentication}>
+            <span className="header__small-label">
+              Hello {user ? user.email : 'user'}
+            </span>
+            <span className="header__large-label">
+              {user ? 'Sign Out' : 'Sign In'}
+            </span>
           </div>
         </Link>
         <div className="header__option">
