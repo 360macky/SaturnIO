@@ -37,11 +37,23 @@ function Login() {
       <div className="login-card">
         <div className="form-input">
           <label htmlFor="email">Email: </label>
-          <input type="email" name="email" className="form-control" value={email} onChange={e => setEmail(e.target.value)} />
+          <input
+            type="email"
+            name="email"
+            className="form-control"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
         </div>
         <div className="form-input">
           <label htmlFor="password">Password: </label>
-          <input type="password" name="password" className="form-control" value={password} onChange={e => setPassword(e.target.value)} />
+          <input
+            type="password"
+            name="password"
+            className="form-control"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
         </div>
         <div className="form-input">
           <button
