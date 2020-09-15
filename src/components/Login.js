@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import '../Login.css';
+import { database, auth } from '../firebase';
+import { useHistory } from 'react-router-dom';
 
 function Login() {
+  
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const history = useHistory();
+
   const SignUp = (e) => {
     e.preventDefault();
+    auth.createUserWithEmailAndPassword(email, password).then(auth => {
+      if (auth) {
+        history.push('/')
+      }
+    }).catch(err => alert(err.message));
   };
   const SingIn = (e) => {
     e.preventDefault();
@@ -17,20 +29,28 @@ function Login() {
       <div className="login-card">
         <div className="form-input">
           <label htmlFor="email">Email: </label>
-          <input type="email" name="email" className="form-control" />
+          <input type="email" name="email" className="form-control" value={email} onChange={e => setEmail(e.target.value)} />
         </div>
         <div className="form-input">
           <label htmlFor="password">Password: </label>
-          <input type="password" name="password" className="form-control" />
+          <input type="password" name="password" className="form-control" value={password} onChange={e => setPassword(e.target.value)} />
         </div>
         <div className="form-input">
-          <button type="submit" className="login__button login--sign-in" onClick={SingIn}>
+          <button
+            type="submit"
+            className="login__button login--sign-in"
+            onClick={SingIn}
+          >
             <AssignmentIndIcon />
             &nbsp; Sign In
           </button>
         </div>
         <div className="form-input">
-          <button type="submit" className="login__button login--sign-up" onClick={SignUp}>
+          <button
+            type="submit"
+            className="login__button login--sign-up"
+            onClick={SignUp}
+          >
             <EmojiPeopleIcon />
             &nbsp; Create your Saturn Account
           </button>
