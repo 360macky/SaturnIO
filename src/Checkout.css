@@ -1,0 +1,25 @@
+.checkout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  height: max-content;
+  flex-wrap: wrap;
+}
+
+.checkout__title {
+  margin-right: 10px;
+  padding: 10px;
+  color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: 900;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.checkout-products {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+}
