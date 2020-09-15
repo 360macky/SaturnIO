@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 
 import Home from './components/Home';
 import Checkout from './components/Checkout';
+import Login from './components/Login';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/checkout" component={Checkout} />
+          <Route exact path="/login" component={Login} />
         </Switch>
         <Footer />
       </div>
