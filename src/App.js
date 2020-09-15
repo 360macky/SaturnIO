@@ -8,9 +8,26 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Checkout from './components/Checkout';
 import Login from './components/Login';
+import { auth } from './firebase.js';
+import { useStateValue } from './StateProvider';
 
 function App() {
-  useEffect(() => {}, []);
+  const [{}, dispatch] = useStateValue();
+  useEffect(() => {
+    auth.onAuthStateChanged((authUser) => {
+      if (authUser) {
+        dispatch({
+          type: 'SET_USER',
+          user: authUser,
+        });
+      } else {
+        dispatch({
+          type: 'SET_USER',
+          user: null,
+        });
+      }
+    });
+  }, []);
 
   return (
     <Router>
