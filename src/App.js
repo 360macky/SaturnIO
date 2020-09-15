@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -10,6 +10,8 @@ import Checkout from './components/Checkout';
 import Login from './components/Login';
 
 function App() {
+  useEffect(() => {}, []);
+
   return (
     <Router>
       <div className="App">
