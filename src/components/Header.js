@@ -34,7 +34,7 @@ function Header() {
         <Link to={user ? '/' : '/login'}>
           <div className="header__option" onClick={handleAuthentication}>
             <span className="header__small-label">
-              Hello {user ? user.email : 'user'}
+              Hello {user ? user.email.split('@')[0] : 'user'}
             </span>
             <span className="header__large-label">
               {user ? 'Sign Out' : 'Sign In'}
