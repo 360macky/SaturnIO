@@ -4,16 +4,16 @@
   flex-direction: column;
   background-color: white;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  align-self: start;
   margin: 20px;
   padding: 20px;
-  padding-top: 30px;
-  max-height: 380px;
   min-width: 100px;
   border-radius: 15px;
   border: 2px solid #f0f0f0;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
   transition: border 0.3s ease;
+  box-sizing: content-box;
 }
 
 .product:hover {
@@ -36,7 +36,6 @@
 }
 
 .product__info {
-  height: 100px;
   margin-bottom: 15px;
 }
 
@@ -49,8 +48,8 @@
   cursor: pointer;
   border-radius: 15px;
   color: white;
-  border: 2px solid var(--color-primary);
-  color: var(--color-primary);
+  border: 2px solid #2962ff;
+  color: #2962ff;
   outline: none;
   transition-property: background-color, color, box-shadow;
   transition-timing-function: ease;
@@ -58,7 +57,7 @@
 }
 
 .product__add-to-basket:hover {
-  background-color: var(--color-primary);
+  background-color: #2962ff;
   color: white;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
 }
