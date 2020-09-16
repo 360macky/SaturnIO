@@ -29,13 +29,6 @@ function Header() {
         </div>
       </Link>
       <div className="header__search">
-        <input
-          type="text"
-          className="header__search-input"
-          autoFocus
-          placeholder="Search telescopes, books an movies"
-        />
-        <SearchIcon className="header__search-icon" />
       </div>
       <div className="header__nav">
         <Link to={user ? '/' : '/login'}>
