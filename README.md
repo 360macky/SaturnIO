@@ -1,68 +1,65 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <h1>Saturn</h1>
+</p>
+<p align="center">🔭 Astronomy eCommerce website hosted in Firebase 🔥</p>
 
-## Available Scripts
+<!-- Shields -->
+<p align="center">
+  <!-- Node -->
+  <img src="https://img.shields.io/static/v1?label=NodeJS&message=v11.14.0&color=339933&logo=node.js" />
+  <!-- React -->
+  <img src="https://img.shields.io/static/v1?label=React&message=v16.13&color=61DAFB&logo=react" />
+  <!-- Material Icons -->
+  <img src="https://img.shields.io/static/v1?label=@material-ui/icons&message=v4.9.1&color=0081CB&logo=material-ui" />
+  <!-- Firebase -->
+  <img src="https://img.shields.io/static/v1?label=Firebase&message=v7.20&color=FFCA28&logo=firebase" />
+  <!-- Stripe -->
+  <img src="https://img.shields.io/static/v1?label=Stripe-js&message=v1.9&color=008CDD&logo=stripe" />
+</p>
 
-In the project directory, you can run:
+<img
+  src="./.github/screenshot.png"
+  title="Screenshot of Saturn"
+  alt="Screenshot of Saturn"
+  align="center"
+/>
 
-### `npm start`
+<!-- Stars -->
+<p align="center">
+  ⭐ Hope you liked this project. <b>Give it a star!</b> 🎉<br/>
+  <img
+    src="https://img.shields.io/github/stars/360macky/Saturn.svg?style=social"
+    title="Stars in Saturn"
+    alt="Stars in Saturn"
+    align="center"
+  />
+</p>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## 🚀 Deployment
+💻 Once you have cloned or directly downloaded this repository: Open a terminal, go to the project 
+folder and run:
 
-### `npm test`
+📦 Install the dependencies
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
+🚀 Start the deployment website
+```bash
+npm start
+```
+🎉 **Great! Start using or developing in Saturn project.**
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✍ Developers
+People who contributed to the development and maintenance of the project.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+* **[Marcelo Arias](https://github.com/360macky)** - `@360macky`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See also the list of [contributors](https://github.com/360macky/Saturn/graphs/contributors) who participated in the project.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## 📃 License
+Distributed under the MIT License.
+See [`LICENSE`](./LICENSE) for more information.
