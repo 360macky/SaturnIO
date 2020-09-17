@@ -4,6 +4,7 @@ import CurrencyFormat from 'react-currency-format';
 import CheckIcon from '@material-ui/icons/Check';
 import { useStateValue } from '../StateProvider';
 import { getBasketTotal } from '../reducer';
+import { Link } from 'react-router-dom';
 
 function Subtotal() {
   const [{ basket }] = useStateValue();
@@ -28,10 +29,12 @@ function Subtotal() {
         prefix={'$'}
       />
 
-      <button className="subtotal__checkout-button">
-        <CheckIcon fontSize="large" />
-        &nbsp; Proceed to Checkout
-      </button>
+      <Link to="/payment">
+        <button className="subtotal__checkout-button">
+          <CheckIcon fontSize="large" />
+          &nbsp; Proceed to Checkout
+        </button>
+      </Link>
     </div>
   );
 }
