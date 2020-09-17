@@ -9,6 +9,10 @@
   margin-right: auto;
 }
 
+.home__cover h1 {
+  margin: 15px;
+}
+
 .home__row {
   display: flex;
   z-index: 1;
