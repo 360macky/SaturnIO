@@ -1,7 +1,7 @@
 footer {
   background-color: var(--color-skyblue-dark);
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -14,4 +14,13 @@ footer {
 .footer__second-block {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.footer__first-block p {
+  margin: 10px;
+}
+
+.footer__first-block a:hover {
+  text-decoration: underline;
 }
