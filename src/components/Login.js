@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import '../Login.css';
-import { database, auth } from '../firebase';
+import { auth } from '../firebase';
 import { useHistory } from 'react-router-dom';
 
 function Login() {
