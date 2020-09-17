@@ -4,7 +4,8 @@
   justify-content: center;
   align-items: center;
   min-height: 80vh;
-  background-image: url('https://images.pexels.com/photos/32237/pexels-photo.jpg');
+  background-image: url('https://i.imgur.com/MIbEfwr.jpg');
+  background-position: top;
   background-size: cover;
 }
 
