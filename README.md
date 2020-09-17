@@ -1,4 +1,4 @@
-<h1 align="center">Saturn</h1>
+<h1 align="center">🪐 Saturn 🛒</h1>
 
 <p align="center">🔭 Astronomy eCommerce website hosted in Firebase 🔥</p>
 
