@@ -48,6 +48,18 @@ npm install
 ```bash
 npm start
 ```
+
+### 🔥 Firebase
+To deploy in firebase, first build the project:
+```bash
+npm run build
+```
+Then deploy it with:
+```bash
+firebase deploy
+```
+
+
 🎉 **Great! Start using or developing in Saturn project.**
 
 
