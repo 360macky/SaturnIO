@@ -35,6 +35,12 @@
 </p>
 
 
+## 🎨 User Interface
+The home has a section with all the products on it:
+
+![UI products](./.github/products.png)
+
+
 ## 🚀 Deployment
 💻 Once you have cloned or directly downloaded this repository: Open a terminal, go to the project 
 folder and run:
