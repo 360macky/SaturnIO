@@ -25,12 +25,12 @@ function Footer() {
         </p>
         <p>
           <a
-            href="https://marceloarias.com"
+            href="https://portfolio.marceloarias.com"
             target="_blank"
             rel="noopener noreferrer"
             title="Marcelo Arias portfolio"
           >
-            MarceloArias.com
+            Portfolio
           </a>
         </p>
       </div>
