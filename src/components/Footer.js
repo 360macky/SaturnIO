@@ -25,6 +25,15 @@ function Footer() {
         </p>
         <p>
           <a
+            href="https://github.com/360macky/Saturn/issues"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Issues
+          </a>
+        </p>
+        <p>
+          <a
             href="https://portfolio.marceloarias.com"
             target="_blank"
             rel="noopener noreferrer"
