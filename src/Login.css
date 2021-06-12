@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   min-height: 80vh;
-  background-image: url('https://i.imgur.com/MIbEfwr.jpg');
+  background-image: url('https://i.imgur.com/gbw4SSF.jpeg');
   background-position: top;
   background-size: cover;
 }
@@ -12,7 +12,7 @@
 .login h1 {
   margin-bottom: 35px;
   box-sizing: border-box;
-  color: white;
+  color: #000000;
 }
 
 .login-card {
