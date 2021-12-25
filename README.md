@@ -1,4 +1,13 @@
-<h1 align="center">🪐 SaturnIO 🛒</h1>
+<p align="center">
+  <img
+    src=".github/SaturnIcon.png"
+    align="center"
+    width="100"
+    alt="SaturnIO"
+    title="SaturnIO"
+  />
+  <h1 align="center">🪐 SaturnIO 🛒</h1>
+</p>
 
 <p align="center">🔭 Astronomy eCommerce website hosted in Firebase 🔥</p>
 
